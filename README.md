@@ -18,13 +18,13 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 ## About Code
 
 ## Installation
-- Clone the repo
+- Clone the repo\
   `git clone https://github.com/revati9834/Coursebook-Maker`
-- Enter Directory
+- Enter Directory\
   `cd coursebook`
-- Install all packages
+- Install all packages\
   `pip install -r requirements.txt`
- - Run webserver
+ - Run webserver\
   `python app.py`
 
 
