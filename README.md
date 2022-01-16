@@ -35,7 +35,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
   
 - routes.py\
   This file contains all routing code.
-  - How to generate forms
+  - How to generate forms\
     To create forms from classes in forms.py , import that classes in routes.py .
     After creating form, get the data and insert into mongodb collection. Then render html template with the WTForm.
   
