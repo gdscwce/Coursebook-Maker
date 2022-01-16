@@ -1,8 +1,7 @@
 # Coursebook-Maker
 
 ## About The Project
-Coursebook Maker which allows user to build coursebook for any course with details like coursebook information, course information,pre-requisites, textbooks, references, course objectives, course content,etc.
-Users can use the feature download to download and save the generated coursebook.
+Coursebook Maker which allows user to build coursebook for any course with details like coursebook information, course information,pre-requisites, textbooks, references, course objectives, course content,etc.Users can use the feature download to download and save the generated coursebook.
 
 To start with the process of generating coursebook,
   User just have to fill up forms that specifies required data to create coursebook.
