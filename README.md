@@ -61,7 +61,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 
 ## Project View
 - Homepage
- [homepage](/screenshots/homepage.png)
+ ![homepage](/Screenshots/homepage.png)
 - Enter coursecode\ 
   (When user submit the coursecode, in background mongodb collection with name of coursecode is created to save further data)
 - Forms
