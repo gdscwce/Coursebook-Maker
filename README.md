@@ -1,7 +1,7 @@
 # Coursebook-Maker
 
 ## Table of contents
-* [About the project](#About the project)
+* [About the project](#about-the-project)
 * 
 
 ## About The Project
