@@ -2,7 +2,9 @@
 
 ## Table of contents
 * [About the project](#about-the-project)
-* 
+* [Technologies Used](#technologies-used)
+* [About Code](#about-code)
+* [Installation](#installation)
 
 ## About The Project
 Coursebook Maker which allows user to build coursebook for any course with details like coursebook information, course information,pre-requisites, textbooks, references, course objectives, course content,etc.User just have to fill up forms that specifies required data.The Data provided by user is stored and fetched with fields in coursebook template. At the end, system automatically generates well structured coursebook. Users have option to download and save the generated coursebook.
@@ -18,7 +20,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - PyMongo (MongoDB driver)
 - WTForms : [About WTforms](https://flask.palletsprojects.com/en/2.0.x/patterns/wtforms/)
 - docx-mailmerge : [Read about docx-mailmerge](https://pbpython.com/python-word-template.html)
-- HTML,CSS Jinja
+- HTML, CSS, Jinja
 
 ## About Code
 - \__init__.py \
