@@ -62,11 +62,14 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 ## Project View
 - Homepage
  ![homepage](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/homepage.PNG)
-- Enter coursecode\ 
+ 
+- Enter coursecode \  
   (When user submit the coursecode, in background mongodb collection with name of coursecode is created to save further data)
   ![coursecode](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/coursecode.PNG)
+  
 - Forms
   ![forms](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/form1.PNG)
+  
 - Download coursebook
   ![download](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/download.PNG)
 
