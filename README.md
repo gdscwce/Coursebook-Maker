@@ -68,7 +68,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
   ![coursecode](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/coursecode.PNG)
   
 - Forms
-  ![forms](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/form1.PNG)
+  ![forms](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/form.PNG)
   
 - Download coursebook
   ![download](https://github.com/revati9834/Coursebook-Maker/blob/main/Screenshots/download.PNG)
