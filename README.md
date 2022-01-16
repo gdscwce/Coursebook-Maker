@@ -27,7 +27,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - app.py\
   To run the application
   
--coursebook
+- coursebook
   - \__init__.py \
     Holds general application setup
 
