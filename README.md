@@ -21,15 +21,15 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - HTML,CSS Jinja
 
 ## About Code
-- \__init__.py\
-  Holds general application setup
+- \\__init__.py\
+  \Holds general application setup
   
 - forms.py\
-  Here Forms are defined as classes\
+  Here Forms are defined as classes.
   
 - routes.py\
-  This file contains all routing code.\
-  - How to generate forms\
+  This file contains all routing code.
+  - How to generate forms
     To create forms from classes in forms.py , import that classes in routes.py .
     After creating form, get the data and insert into mongodb collection. Then render html template with the WTForm.
   
@@ -44,7 +44,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
     layout.html is base template for application.
     
  - static folder
-    - It contains main.css
+    It contains main.css
 
 ## Installation
 1. Clone the repo\
