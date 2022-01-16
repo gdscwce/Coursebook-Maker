@@ -16,15 +16,16 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - Python
 - Flask (web framework)
 - PyMongo (MongoDB driver)
+- WTForms : [About WTforms](https://flask.palletsprojects.com/en/2.0.x/patterns/wtforms/)
 - docx-mailmerge : [Read about docx-mailmerge](https://pbpython.com/python-word-template.html)
 - HTML,CSS Jinja
 
 ## About Code
-- __init__.py\
+- \__init__.py\
   Holds general application setup
 - forms.py\
   Here Forms are defined as classes\
-  [Learn more about forms](https://flask.palletsprojects.com/en/2.0.x/patterns/wtforms/)
+  
 -routes.py\
   This file contains all routing code.\
   To create forms from classes in forms.py , import that classes in routes.py .
