@@ -17,5 +17,24 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 
 ## About Code
 
+## Installation
+Clone the repo
+'git clone https://github.com/DiptoChakrabarty/Resume-Generator'
+Enter Directory
+cd Resume-Generator
+Install all packages
+pip install -r requirements.txt
+Remove site.db file to start fresh database
+rm resume/site.db
+Setup Env Variables
+create file .env inside folder resume
+
+Add the following
+
+MAIL_USERNAME="{{ your gmail username }}"
+PASSWORD="{{ your password }}"
+Run webserver
+python3 app.py
+
 
  
