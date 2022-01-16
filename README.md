@@ -24,6 +24,8 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - HTML, CSS, Jinja
 
 ## About Code
+- app.py\
+  Run Server
 - \__init__.py \
   Holds general application setup
   
