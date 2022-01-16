@@ -21,7 +21,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 Clone the repo
 'git clone https://github.com/DiptoChakrabarty/Resume-Generator'
 Enter Directory
-cd Resume-Generator
+`cd `cd Resume-Generator
 Install all packages
 pip install -r requirements.txt
 Remove site.db file to start fresh database
