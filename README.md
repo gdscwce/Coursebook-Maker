@@ -12,6 +12,6 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - Python
 - Flask (web framework)
 - PyMongo (MongoDB driver)
-- docx-mailmerge [Read about docx-mailmerge](https://pbpython.com/python-word-template.html)
+- docx-mailmerge : [Read about docx-mailmerge](https://pbpython.com/python-word-template.html)
 - HTML,CSS Jinja
  
