@@ -21,8 +21,8 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - HTML,CSS Jinja
 
 ## About Code
-- \\__init__.py\
-  \Holds general application setup
+- \__init__.py 
+  Holds general application setup
   
 - forms.py\
   Here Forms are defined as classes.
@@ -36,7 +36,7 @@ Coursebook Maker which allows user to build coursebook for any course with detai
 - createDoc.py \
   create_DOC() function from this file is used in routes.py to generate coursebook in doc format.\
   This function use template Coursebook_Template to create well structured output.
-  It fetch the json data with fields in Coursebook_Template. 
+  It fetch the json data with fields in Coursebook_Template.\ 
   [Learn about how to create MS word template](https://pbpython.com/python-word-template.html)
  
  - template folder
