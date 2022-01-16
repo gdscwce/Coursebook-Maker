@@ -1,0 +1,49 @@
+{%  extends "layout.html" %}
+{% block content %}
+<br><br>
+
+<div class="content-section">
+   
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4"> Coursebook Information : {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.coursename.label(class="form-control-label") }}
+                {{ form.coursename(class="form-control") }}
+
+                {{ form.studentclass.label(class="form-control-label") }}
+                {{ form.studentclass(class="form-control") }}
+
+                {{ form.branch.label(class="form-control-label") }}
+                {{ form.branch(class="form-control") }}
+
+                {{ form.semester.label(class="form-control-label") }}
+                {{ form.semester(class="form-control") }}
+
+                {{ form.academicyear.label(class="form-control-label") }}
+                {{ form.academicyear(class="form-control") }}
+                
+                {{ form.prepared_by.label(class="form-control-label") }}
+                {{ form.prepared_by(class="form-control") }}
+                
+            </div>
+
+            
+
+            
+            
+            
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+
+    </form>
+
+</div>
+
+
+
+{%  endblock content  %}
+

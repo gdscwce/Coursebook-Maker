@@ -1,0 +1,44 @@
+{%  extends "layout.html" %}
+{% block content %}
+<br><br>
+
+
+<div class="content-section">
+   
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Course Information {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.lects.label(class="form-control-label") }}
+                {{ form.lects(class="form-control") }}
+
+                {{ form.tuts.label(class="form-control-label") }}
+                {{ form.tuts(class="form-control") }}
+
+                {{ form.practicals.label(class="form-control-label") }}
+                {{ form.practicals(class="form-control") }}
+
+                {{ form.credits.label(class="form-control-label") }}
+                {{ form.credits(class="form-control") }}
+                
+            </div>
+
+            
+
+            
+            
+            
+            </fieldset>
+          
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+
+    </form>
+
+</div>
+
+
+{%  endblock content  %}
+

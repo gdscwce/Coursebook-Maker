@@ -1,0 +1,263 @@
+{%  extends "layout.html" %}
+{% block content %}
+<br><br><br>
+
+
+<div class="content-section">
+	<fieldset class="form-group" id="cloneunder">
+           <legend class="border-bottom mb-4">Your coursebook is ready</legend>
+
+   <p>Download the coursebook for {{ccode}}</p>
+
+   
+   <a href="{{url_for('.Generate_Coursebook_doc',coursecode=ccode)}}"class="btn btn-outline-success" style="float: right;">Download Coursebook doc</a>
+   
+    </fieldset>
+
+</div>
+<div class="content-section">
+	<fieldset class="form-group" id="cloneunder">
+           <legend class="border-bottom mb-4">Check Your Data</legend>
+
+    <h4>Coursebook Information</h4>
+	<table>
+	{% for record in json_data %}
+		
+		<tr>
+			<td>
+				Coursename
+			</td>
+			<td>
+				 {{ record['coursename'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Coursecode
+			</td>
+			<td>
+				 {{ record['coursecode'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Class
+			</td>
+			<td>
+				 {{ record['studentclass'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Branch
+			</td>
+			<td>
+				 {{ record['branch'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Semester
+			</td>
+			<td>
+				 {{ record['semester'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Academic Year
+			</td>
+			<td>
+				 {{ record['academicyear'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Prepared by
+			</td>
+			<td>
+				 {{ record['prepared_by'] }}
+			</td>
+		</tr>
+    {% endfor %}
+	</table>
+	<br>
+
+	<h4>Course Information</h4>
+	<table>
+	{% for record in course %}
+		
+		<tr>
+			<td>
+				Number of Lectures per week
+			</td>
+			<td>
+				 {{ record['lectures'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Number of tutorials per week
+			</td>
+			<td>
+				 {{ record['tutorials'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Number of practicals per week
+			</td>
+			<td>
+				 {{ record['practicals'] }}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Credits
+			</td>
+			<td>
+				 {{ record['credits'] }}
+			</td>
+		</tr>
+		
+    {% endfor %}
+	</table>
+	<br>
+	
+	<h4>Pre-requisites</h4>
+	<table>
+	{% for record in pre_reqs %}
+		<tr>
+			<td>{{ record['pre_reqs'] }}</td>
+		</tr>
+	{% endfor %}
+	</table>
+	<br>
+
+	<h4>Textbooks</h4>
+	<table>
+	{% for record in txtbooks %}
+		<tr>
+			<td>{{ record['txtbooks'] }}</td>
+		</tr>
+	{% endfor %}
+	</table>
+	<br>
+
+	<h4>References</h4>
+	<table>
+	{% for record in refs %}
+		<tr>
+			<td>{{ record['refs'] }}</td>
+		</tr>
+	{% endfor %}	
+	</table>
+	<br>
+
+	<h4>Course Objectives</h4>
+	<table>
+	{% for record in crseObjs %}
+		<tr>
+			<td>{{ record['crseObjs'] }}</td>
+		</tr>
+	{% endfor %}	
+	</table>
+	<br>
+
+	<h4>Course Outcomes</h4>
+	<table>
+	{% for record in crseOutcomes %}
+		<tr>
+			<th>No</th>
+			<th>COs</th>
+			<th>Bloom’s Cognitive level</th>
+			<th>Bloom’s Cognitive Descriptor</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>{{ record['co1'] }}</td>
+			<td>{{ record['co1level']}}</td>
+			<td>{{ record['co1Desc']}}</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>{{ record['co2'] }}</td>
+			<td>{{ record['co2level']}}</td>
+			<td>{{ record['co2Desc']}}</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>{{ record['co3'] }}</td>
+			<td>{{ record['co3level']}}</td>
+			<td>{{ record['co3Desc']}}</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>{{ record['co4'] }}</td>
+			<td>{{ record['co4level']}}</td>
+			<td>{{ record['co4Desc']}}</td>
+		</tr>
+	{% endfor %}	
+	</table>
+	<br>
+	
+	<h4>Course Content</h4>
+	<table>
+		{% for record in crseContent %}
+		<tr>
+			<th>Module No</th>
+			<th>Module Title</th>
+			<th>Module Content</th>
+			<th>Hours</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>{{ record['mod1Title'] }}</td>
+			<td>{{ record['mod1Desc'] }}</td>
+			<td>{{ record['mod1Hours'] }}</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>{{ record['mod2Title'] }}</td>
+			<td>{{ record['mod2Desc'] }}</td>
+			<td>{{ record['mod2Hours'] }}</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>{{ record['mod3Title'] }}</td>
+			<td>{{ record['mod3Desc'] }}</td>
+			<td>{{ record['mod3Hours'] }}</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>{{ record['mod4Title'] }}</td>
+			<td>{{ record['mod4Desc'] }}</td>
+			<td>{{ record['mod4Hours'] }}</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>{{ record['mod5Title'] }}</td>
+			<td>{{ record['mod5Desc'] }}</td>
+			<td>{{ record['mod5Hours'] }}</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>{{ record['mod6Title'] }}</td>
+			<td>{{ record['mod6Desc'] }}</td>
+			<td>{{ record['mod6Hours'] }}</td>
+		</tr>
+
+
+		{% endfor %}
+	</table>
+
+
+
+
+
+
+	</fieldset>
+</div>
+
+{%  endblock content  %}
+

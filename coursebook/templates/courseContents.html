@@ -1,0 +1,99 @@
+{%  extends "layout.html" %}
+{% block content %}
+
+
+<div class="content-section">
+   
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <br>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 1 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod1Title.label(class="form-control-label") }}
+                {{ form.mod1Title(class="form-control") }}
+
+                {{ form.mod1Hours.label(class="form-control-label") }}
+                {{ form.mod1Hours(class="form-control") }}
+
+                {{ form.mod1Desc.label(class="form-control-label") }}
+                {{ form.mod1Desc(class="form-control") }}
+            </div>
+        </fieldset>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 2 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod2Title.label(class="form-control-label") }}
+                {{ form.mod2Title(class="form-control") }}
+
+                {{ form.mod2Hours.label(class="form-control-label") }}
+                {{ form.mod2Hours(class="form-control") }}
+
+                {{ form.mod2Desc.label(class="form-control-label") }}
+                {{ form.mod2Desc(class="form-control") }}
+            </div>
+        </fieldset>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 3 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod3Title.label(class="form-control-label") }}
+                {{ form.mod3Title(class="form-control") }}
+
+                {{ form.mod3Hours.label(class="form-control-label") }}
+                {{ form.mod3Hours(class="form-control") }}
+
+                {{ form.mod3Desc.label(class="form-control-label") }}
+                {{ form.mod3Desc(class="form-control") }}
+            </div>
+        </fieldset>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 4 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod4Title.label(class="form-control-label") }}
+                {{ form.mod4Title(class="form-control") }}
+
+                {{ form.mod4Hours.label(class="form-control-label") }}
+                {{ form.mod4Hours(class="form-control") }}
+
+                {{ form.mod4Desc.label(class="form-control-label") }}
+                {{ form.mod4Desc(class="form-control") }}
+            </div>
+        </fieldset>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 5 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod5Title.label(class="form-control-label") }}
+                {{ form.mod5Title(class="form-control") }}
+
+                {{ form.mod5Hours.label(class="form-control-label") }}
+                {{ form.mod5Hours(class="form-control") }}
+
+                {{ form.mod5Desc.label(class="form-control-label") }}
+                {{ form.mod5Desc(class="form-control") }}
+            </div>
+        </fieldset>
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Module 6 {{ccode}}</legend>
+            <div class="form-group" id="skillclass">
+                {{ form.mod6Title.label(class="form-control-label") }}
+                {{ form.mod6Title(class="form-control") }}
+
+                {{ form.mod6Hours.label(class="form-control-label") }}
+                {{ form.mod6Hours(class="form-control") }}
+
+                {{ form.mod6Desc.label(class="form-control-label") }}
+                {{ form.mod6Desc(class="form-control") }}
+            </div>
+            
+        </fieldset>
+            
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+
+    </form>
+
+</div>
+
+
+{%  endblock content  %}

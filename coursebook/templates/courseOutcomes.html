@@ -1,0 +1,71 @@
+{%  extends "layout.html" %}
+{% block content %}
+<br><br>
+
+<div class="content-section">
+   
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group" id="cloneunder">
+        <legend class="border-bottom mb-4">Course Outcomes {{ccode}}</legend>
+            
+            <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">CO1</legend>
+                <div class="form-group" id="skillclass">
+                    {{ form.co1.label(class="form-control-label") }}
+                    {{ form.co1(class="form-control") }}
+                    {{ form.co1level.label(class="form-control-label") }}
+                    {{ form.co1level(class="form-control") }}
+                    {{ form.co1Desc.label(class="form-control-label") }}
+                    {{ form.co1Desc(class="form-control") }}
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">CO2</legend>
+                <div class="form-group" id="skillclass">
+                    {{ form.co2.label(class="form-control-label") }}
+                    {{ form.co2(class="form-control") }}
+                    {{ form.co2level.label(class="form-control-label") }}
+                    {{ form.co2level(class="form-control") }}
+                    {{ form.co2Desc.label(class="form-control-label") }}
+                    {{ form.co2Desc(class="form-control") }}
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">CO3</legend>
+                <div class="form-group" id="skillclass">
+                    {{ form.co3.label(class="form-control-label") }}
+                    {{ form.co3(class="form-control") }}
+                    {{ form.co3level.label(class="form-control-label") }}
+                    {{ form.co3level(class="form-control") }}
+                    {{ form.co3Desc.label(class="form-control-label") }}
+                    {{ form.co3Desc(class="form-control") }}
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">CO4</legend>
+                <div class="form-group" id="skillclass">
+                    {{ form.co4.label(class="form-control-label") }}
+                    {{ form.co4(class="form-control") }}
+                    {{ form.co4level.label(class="form-control-label") }}
+                    {{ form.co4level(class="form-control") }}
+                    {{ form.co4Desc.label(class="form-control-label") }}
+                    {{ form.co4Desc(class="form-control") }}
+                </div>
+            </fieldset>
+
+            
+        </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+
+    </form>
+
+</div>
+
+
+{%  endblock content  %}

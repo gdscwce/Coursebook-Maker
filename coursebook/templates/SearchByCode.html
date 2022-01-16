@@ -1,0 +1,27 @@
+{%  extends "layout.html" %}
+{% block content %}
+<br><br>
+
+<div class="content-section">
+   
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group" id="cloneunder">
+            <legend class="border-bottom mb-4">Coursecode</legend>
+            <div class="form-group" >
+                {{ form.coursecode.label(class="form-control-label") }}
+                {{ form.coursecode(class="form-control") }}
+            </div>
+
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+
+    </form>
+
+</div>
+
+
+{%  endblock content  %}
+
