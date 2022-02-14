@@ -54,7 +54,8 @@ Coursebook Maker which allows user to build coursebook for any course with detai
       It contains main.css
 
 ## Installation
-1. Clone the repo\
+1. Install MongoDB
+2. Clone the repo\
   `git clone https://github.com/revati9834/Coursebook-Maker`
 2. Enter Directory\
   `cd coursebook`
